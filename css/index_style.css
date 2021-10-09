@@ -1,0 +1,104 @@
+/* Some Global Stylies */
+body {
+    background-color: black;
+    font-family: "segoe UI light";
+}
+
+.container {
+    width: 70% !important;
+    margin: auto !important;
+}
+
+/* overlay effect */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: top 0.8s;
+}
+
+.hover-here:hover .overlay {
+    top: 0;
+}
+
+/* Input search style */
+#API input,
+#contact input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: #fff;
+}
+
+/* Menu */
+.wrapper-menu {
+    position: fixed;
+    left: -304px;
+    z-index: 15;
+} 
+
+/* Menu Black Section */
+.wrapper-menu .navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.navigation li {
+    cursor: pointer;
+}
+
+.navigation ul {
+    position: relative;
+    overflow: hidden;
+}
+
+.navigation ul li {
+    position: relative;
+    top: 100%;
+}
+
+.navigation li:hover,
+.navigation li a:hover,
+.navigation footer .social-icons a:hover {
+    color: red !important;
+    transition: color 0.3s;
+}
+
+.wrapper-menu footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menu White Section */
+.wrapper-menu .control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper-menu .control .menu-bar-icon,
+.wrapper-menu .control .menu-close-icon {
+    cursor: pointer;
+}
+
+.wrapper-menu .control .menu-close-icon {
+    display: none;
+}
+
+.wrapper-menu .control a {
+    color: black;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    /* .container {
+        width: calc(90% - 55px) !important;
+        margin: auto !important;
+    } */
+}

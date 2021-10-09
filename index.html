@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo-angular-icon-256.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <title>JS Exam</title>
+</head>
+
+<body>
+
+    <!-- Side Menu Bar Section -->
+    <div class="wrapper-menu vh-100 d-flex">
+        <!-- Black section -->
+        <div class="navigation bg-dark">
+            <ul class="list-unstyled text-white pt-5">
+                <li class="px-4 py-2">Now Playing</li>
+                <li class="px-4 py-2">Popular</li>
+                <li class="px-4 py-2">Top Rated</li>
+                <li class="px-4 py-2">Trending</li>
+                <li class="px-4 py-2">Upcomming</li>
+                <li class="px-4 py-2"><a href="#contact" class="text-decoration-none text-white"> Contact Us</a></li>
+            </ul>
+            <footer class="pb-4 w-75">
+                <div class="social-icons d-flex justify-content-around w-50">
+                    <div><a href="#" target="_blank" class="text-decoration-none text-white"><i
+                                class="fab fa-facebook-f"></i></a></div>
+                    <div><a href="#" target="_blank" class="text-decoration-none text-white"><i
+                                class="fab fa-twitter"></i></a></div>
+                    <div><a href="#" target="_blank" class="text-decoration-none text-white"><i
+                                class="fas fa-globe"></i></a></div>
+                </div>
+                <div class="text-center">
+                    <p class="text-muted">Copyright &copy; AEssam 2021 All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <!-- White Section -->
+        <div class="control bg-light py-2">
+            <div class="w-75 text-center mx-auto">
+                <img src="images/logo.png" class="img-fluid" alt="">
+            </div>
+            <div class="text-center menu-toggle menu-bar-icon">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <!-- close sign -->
+            <div class="menu-close-icon text-center">
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <div class="text-center">
+                <a href="#" target="_blank" class="text-decoration-none d-block"><i class="fas fa-globe"></i></a>
+                <a href="#" target="_blank" class="text-decoration-none d-block"><i class="fas fa-share-alt"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search and API section -->
+    <section id="API">
+        <div class="container py-5">
+            <!-- Search inputs -->
+            <div class="row py-5">
+                <div class="col-sm-6">
+                    <div class="border-bottom text-center">
+                        <input type="search" name="" id="searchByWord" placeholder="get movies by word..." class="text-center pb-2">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="border-bottom text-center">
+                        <input type="search" name="" id="searchTwo" placeholder="Search..." class="text-center pb-2">
+                    </div>
+                </div>
+            </div>
+            <!-- Display Movies -->
+            <div id="display" class="row">
+                <!-- ! Movies will be displaied here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact US section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="py-4 text-white">ContactUs...</h2>
+            <div class="row py-2">
+                <div class="col-sm-6">
+                    <div class="border-bottom text-center py-2">
+                        <input type="text" name="" id="nameInput" placeholder="Enter Your Name" class="text-center pb-2 formInput">
+                    </div>
+                    <p class="alert alert-danger name-mss d-none">Your name is not valid</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="border-bottom text-center py-2">
+                        <input type="email" name="" id="emailInput" placeholder="Enter Email" class="text-center pb-2 formInput">
+                    </div>
+                    <p class="alert alert-danger email-mss d-none">Enter a valid email</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="border-bottom text-center py-2">
+                        <input type="text" name="" id="phoneInput" placeholder="Enter Phone" class="text-center pb-2 formInput">
+                    </div>
+                    <p class="alert alert-danger phone-mss d-none">Enter a valid phone</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="border-bottom text-center py-2">
+                        <input type="text" name="" id="ageInput" placeholder="Enter Age" class="text-center pb-2 formInput">
+                    </div>
+                    <p class="alert alert-danger age-mss d-none">Enter a valid age</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="border-bottom text-center py-2">
+                        <input type="password" name="" id="passInput" placeholder="Enter Password" class="text-center pb-2 formInput">
+                    </div>
+                    <p class="alert alert-danger password-mss d-none">entre a valid password *Minimum eight characters, and at least one number</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="border-bottom text-center py-2">
+                        <input type="password" name="" id="rePassInput" placeholder="Enter Repassword" class="text-center pb-2 formInput">
+                    </div>
+                    <p class="alert alert-danger repassword-mss d-none">Enter a valid repassword</p>
+                </div>
+            </div>
+            <button class="mySubmitBtn btn btn-outline-danger my-2">Submit</button>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
