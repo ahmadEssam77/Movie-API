@@ -190,3 +190,11 @@ $('.formInput').blur(function () {
         }
     }));
 });
+
+// Loading Screen
+$(document).ready(function() {
+    $('.loading-shape').fadeOut(1000, function() {
+        $('#loading').fadeOut(500);
+        $('body').css({"overflow-y" : "auto"});
+    });
+});
