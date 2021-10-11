@@ -99,6 +99,10 @@ function searchByWord() {
 searchByWord();
 
 // Menu Toggle
+let menuBlackWidth = $('.wrapper-menu .navigation').width();
+
+// console.log(menuBlackWidth);
+
 $('.menu-bar-icon').click(function () {
     $('.wrapper-menu').animate({ left: "0px" }, 1000, function () {
         $('.navigation ul li').animate({ top: "0px" }, 500);
@@ -109,7 +113,7 @@ $('.menu-bar-icon').click(function () {
 
 $('.menu-close-icon').click(function () {
     $('.navigation ul li').animate({ top: "100%" }, 500);
-    $('.wrapper-menu').animate({ left: "-304px" }, 1000);
+    $('.wrapper-menu').animate({ left: -menuBlackWidth }, 1000);
     $('.menu-close-icon').css({ "display": "none" });
     $('.menu-bar-icon').css({ "display": "block" });
 });
